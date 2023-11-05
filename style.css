@@ -1,0 +1,362 @@
+/*General*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+}
+
+
+/*top bar*/
+div.top_bar {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 20px rgb(224, 224, 224);
+    padding: 0 10vw;
+}
+
+.logo {
+    height: 40px;
+}
+
+.top_bar_icon {
+    display: flex;
+    align-items: center;
+}
+
+.top_bar_icon button {
+    border-radius: 20px;
+    border: 2px gray solid;
+    height: 30px;
+    width: 175px;
+    margin-left: 20px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 11pt;
+}
+
+.top_bar_icon svg {
+    font-size: 14pt;
+    margin-left: 15px;
+    font-weight: 100;
+    color: gray;
+}
+
+
+/*page_content*/
+div.page_content {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 10vw;
+}
+
+/*right bar - general*/
+.right_side {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    border-left: rgba(168, 168, 168, 0.35) 2px solid;
+}
+
+.right_side .box {
+    height: 275px;
+}
+
+.box h4 {
+    margin-bottom: 15px;
+}
+
+/*right bar - first box*/
+.first_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: rgba(168, 168, 168, 0.35) 2px solid;
+}
+
+.medium_plus_twitter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.medium_plus_twitter>img {
+    height: 50px;
+    width: auto;
+    scale: 1.2;
+}
+
+.medium_plus_twitter .fa-twitter {
+    color: rgb(55, 161, 243);
+    font-size: 16pt;
+    padding-left: 5px;
+}
+
+.medium_plus_twitter .fa-plus {
+    color: rgba(168, 168, 168, 0.7);
+    font-size: 14pt;
+    font-weight: 100;
+    padding-left: 5px;
+}
+
+.first_box>p {
+    text-align: center;
+    font-weight: 400;
+}
+
+.twitter_connection_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: rgb(168, 168, 168) solid 1px;
+    border-radius: 20px;
+    padding: 8px 20px 8px 8px;
+    width: 65%;
+    cursor: pointer;
+}
+
+.twitter_connection_button .fa-twitter {
+    color: rgb(55, 161, 243);
+    height: 25px;
+    font-size: 16pt;
+    margin-right: 12px;
+}
+
+.twitter_connection_button button {
+    border: none;
+    background-color: transparent;
+    font-size: 12pt;
+}
+
+.first_box a {
+    color: rgb(168, 168, 168);
+}
+
+/*right bar - second box*/
+.second_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.second_box_rec Button {
+    padding: 10px;
+    border: none;
+    border-radius: 17px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+/*right bar - third box*/
+.slides {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+}
+
+.slides .profile_slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.profile_info p:first-child {
+    text-align: left;
+    font-weight: 700;
+}
+
+.profile_info p:nth-child(2) {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 250px;
+}
+
+.profile_slide button {
+    background-color: transparent;
+    padding: 8px 12px;
+    border-radius: 17px;
+    border: rgb(168, 168, 168) solid 1px;
+    cursor: pointer;
+}
+
+
+/*right bar - fourth box*/
+.fourth_box_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+}
+
+.recent_activity {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.activity_logo {
+    display: flex;
+    align-items: center;
+}
+
+.activity_logo img {
+    height: 25px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.activity_logo h5 span {
+    color: rgb(118, 118, 118);
+}
+
+.recent_activity .activity_date {
+    color: rgb(118, 118, 118);
+    font-size: 10pt;
+}
+
+.recent_activity .activity_headline {
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+.fourth_box_content>a {
+    color: rgb(26, 133, 21);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+/*right bar - fifth box*/
+.fifth_box {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.fifth_box a {
+    text-decoration: none;
+    color: rgb(118, 118, 118);
+    margin: 7px;
+    font-size: 14pt;
+    font-weight: 400;
+}
+
+
+/*left box*/
+div.left_box {
+    width: 75%;
+    margin-right: 5%;
+}
+
+.tpo_headlines {
+    margin-top: 75px;
+    border-bottom: rgba(168, 168, 168, 0.35) 2px solid;
+}
+
+.tpo_headlines span:nth-child(1) {
+    display: inline-block;
+    color: rgb(152, 152, 152);
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.tpo_headlines span:nth-child(2) {
+    margin-left: 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-bottom: rgb(0, 0, 0) 2px solid;
+}
+
+
+/*article slides*/
+.article_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+    width: 100%;
+}
+
+.article_container .ditails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70%;
+    height: 150px;
+}
+
+.producer {
+    display: flex;
+    align-items: center;
+}
+
+.producer img {
+    height: 25px;
+    width: 25px;
+    border-radius: 15px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.ditails>p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: gray;
+    padding-right: 25px;
+}
+
+.ditails .date {
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    padding-right: 25px;
+    align-items: center;
+    font-size: 10pt;
+}
+
+.article_container>img {
+    height: 150px;
+    width: 30%;
+    object-fit: cover;
+}
+
+.ditails .date p a {
+    background-color: rgba(200, 198, 198, 0.3);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: gray;
+}
+
+.article_icons a {
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 12pt;
+    font-weight: 900;
+}
